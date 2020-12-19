@@ -15,9 +15,9 @@ CDH除了能够管理自生所提供的一些大数据相关服务外，还允�
 
 **包名**：FLINK
 
-**版本号**：1.10.0-bin-GT_1.0
+**版本号**：1.12.0-bin-scala_2.11
 
-**运行环境**：el7
+**运行环境**：sles12
 
 el6是代表centos6系统，centos7则用el7表示
 
@@ -36,7 +36,7 @@ parcel必须包置于/opt/cloudera/parcel-repo/目录下才可以被CDH发布程
 
 ## flink-parcel制作过程
 
-以CDH6.1、FLINK1.9.0为例
+以CDH5.16、FLINK1.12.0为例
 
 (1)**下载制作包**
 
@@ -51,13 +51,13 @@ git clone https://github.com/pecanNBU/flink-parcel.git
 FLINK_URL=http://xxxx/flink-1.10.0-bin-GT_2.12.tgz
 
 #flink版本号
-FLINK_VERSION=1.10.0
+FLINK_VERSION=1.12.0
 
 #扩展版本号
-EXTENS_VERSION=BIN-GT_2.12
+EXTENS_VERSION=bin-scala_2.11
 
 #操作系统版本，以centos为例
-OS_VERSION=7
+OS_VERSION=sles12
 
 #CDH 小版本
 CDH_MIN_FULL=5.2
